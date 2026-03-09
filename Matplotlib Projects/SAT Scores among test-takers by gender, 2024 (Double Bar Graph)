@@ -1,0 +1,22 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+plt.title("SAT Scores among test-takers by gender, 2024")
+plt.xlabel("SAT Score")
+plt.ylabel("Percentage of test-takers")
+
+xlabels = np.array(["400-590", "600-790", "800-990", "1000-1190", "1200-1390", "1400-1600"])
+y1points = np.array([1, 16, 33, 29, 16, 6])
+y2points = np.array([1, 18, 28, 26, 17, 9])
+
+x = np.arange(len(xlabels)) 
+width = 0.35 
+
+plt.bar(x - width/2, y1points, width, color="red", label="Female test-takers")
+plt.bar(x + width/2, y2points, width, color="blue", label="Male test-takers")
+
+plt.xticks(x, xlabels)
+
+plt.legend(loc='upper left', title='Legend')
+plt.figtext(0.515, 0.02, "Source: https://reports.collegeboard.org/media/pdf/2024-total-group-sat-suite-of-assessments-annual-report-ADA.pdf ", ha="center", fontsize=10, color="black")
+plt.show()
