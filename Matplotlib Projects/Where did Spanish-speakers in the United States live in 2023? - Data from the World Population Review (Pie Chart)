@@ -11,3 +11,4 @@ plt.pie(y, labels = mylabels, colors = mycolors)
 plt.figtext(0.515, 0.02, "Source: https://worldpopulationreview.com/state-rankings/spanish-speaking-states", ha="center", fontsize=10, color="black")
 plt.figtext(0.515, 0.06, "Note: Figures are rounded to two decimal places and may not sum to exactly 100%.", ha="center", fontsize=10, color="gray", style="italic")
 plt.show()
+
