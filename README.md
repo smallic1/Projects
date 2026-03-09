@@ -4,7 +4,7 @@
 - 1940 United States Census: Languages spoken by the White population
 - Average ACT Composite Scores for Race or Ethnicity by Level of Preparation in 2024 (Plotly Version)
 - History test scores vs. Number of hours of sleep (Plotly Version)
-- Means of Transportation to Work by People Speaking Spanish at Home and Ability to Speak English for Workplace Geography - State of Florida, year 2024 (Plotly Version)
+- Means of Transportation to Work by Language Spoken at Home and Ability to Speak English for Workplace Geography (ACS Data) - State of Florida, among Spanish-speakers only for 2024 (Double Bar Graph)
 - Number of Chinese-speakers in Canada by Census Year (Plotly Version)
 - SAT Scores by gender, 2024 (Plotly Version)
 - SAT Scores for Math and ERW (Plotly Version)
