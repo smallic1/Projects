@@ -20,3 +20,5 @@ plt.xticks(x, xpoints)
 plt.legend(loc='upper left', title='Legend')
 plt.figtext(0.515, 0.02, "Source: https://run.outsideonline.com/road/road-racing/whats-a-good-5k-time-heres-what-the-latest-data-says/", ha="center", fontsize=10, color="black")
 plt.show()
+
+
