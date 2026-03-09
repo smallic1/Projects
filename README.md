@@ -24,3 +24,6 @@
 
 ## Author
 Shay Mallick - (https://github.com/smallic1)
+
+## Note
+The project folder will be updated as needed.
