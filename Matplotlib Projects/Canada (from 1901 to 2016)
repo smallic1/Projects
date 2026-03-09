@@ -1,0 +1,18 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+plt.title("Chinese-speakers in Canada (from 1901 to 2016)")
+plt.xlabel("Year of Census")
+plt.ylabel("Number of Chinese-speakers (in millions)")
+plt.grid()
+
+xpoints = np.array([1901, 1911, 1921, 1931, 1941, 1951, 1961, 1971, 1981, 1986, 1991, 1996, 2001, 2006, 2011, 2016])
+ypoints = np.array([16470, 28410, 38450, 46110, 33500, 28285, 49100, 95915, 224135, 308515, 498845, 736010, 872400, 1015230, 1112610, 1312859])
+
+plt.plot(xpoints, ypoints, marker='o', color='#5d3954', label='Number of Chinese-speakers (in millions)')
+
+plt.xticks([1901, 1911, 1921, 1931, 1941, 1951, 1961, 1971, 1981, 1986, 1991, 1996, 2001, 2006, 2011, 2016])
+
+plt.legend(loc='upper left', title='Legend')
+plt.figtext(0.515, 0.02, "Source: https://www150.statcan.gc.ca/n1/pub/11-630-x/11-630-x2018001-eng.htm", ha="center", fontsize=10, color="black")
+plt.show()
