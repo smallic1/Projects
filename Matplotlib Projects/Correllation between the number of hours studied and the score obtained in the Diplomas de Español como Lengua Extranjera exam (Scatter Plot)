@@ -20,7 +20,7 @@ plt.figtext(0.515, 0.8887, question_text, ha="center", fontsize=10, color="black
 
 plt.show()
 
-#Question: The table shows information about how many hours the test-takers studies and their scores on the Diplomas de Español como Lengua Extranjera exam. Plot the scatter graph."
+Question: The table shows information about how many hours the test-takers studies and their scores on the Diplomas de Español como Lengua Extranjera exam. Plot the scatter graph."
 
 Table:
 
