@@ -1,0 +1,13 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+plt.title("Where did Spanish-speakers in the United States live in 2023?")
+
+y = np.array([24.83, 18.50, 10.97, 6.56, 3.96, 3.52, 3.14, 28.52])
+mylabels = (["California (24.83%)", "Texas (18.50%)", "Florida (10.97%)", "New York (6.56%)", "Illinois (3.96%)", "New Jersey (3.52%)", "Arizona (3.14%)", "Other states (28.52%)"])
+mycolors = (["#e32636", "#a4c639", "#cd9575", "#008000", "#007fff", "#a1caf1", "#0095b6", "#006a4e"])
+
+plt.pie(y, labels = mylabels, colors = mycolors)
+plt.figtext(0.515, 0.02, "Source: https://worldpopulationreview.com/state-rankings/spanish-speaking-states", ha="center", fontsize=10, color="black")
+plt.figtext(0.515, 0.06, "Note: Figures are rounded to two decimal places and may not sum to exactly 100%.", ha="center", fontsize=10, color="gray", style="italic")
+plt.show()
