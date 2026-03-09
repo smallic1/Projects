@@ -20,3 +20,4 @@ plt.xticks(x, xlabels)
 plt.legend(loc='upper left', title='Legend')
 plt.figtext(0.515, 0.02, "Source: https://reports.collegeboard.org/media/pdf/2024-total-group-sat-suite-of-assessments-annual-report-ADA.pdf ", ha="center", fontsize=10, color="black")
 plt.show()
+
