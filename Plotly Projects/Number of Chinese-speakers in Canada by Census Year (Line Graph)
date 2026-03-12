@@ -1,0 +1,13 @@
+import plotly.graph_objects as go
+
+years = [1901, 1911, 1921, 1931, 1941, 1951, 1961, 1971, 1981, 1986, 1991, 1996, 2001, 2006, 2011, 2016]
+number_of_chinese_speakers = [16470, 28410, 38450, 46110, 33500, 28285, 49100, 95915, 224135, 308515, 498845, 736010, 872400, 1015230, 1112610, 1312859]
+source_text = "Source:https://www150.statcan.gc.ca/n1/pub/11-630-x/11-630-x2018001-eng.htm"
+labels_with_percentage = [f"Year {year}: {value:,} Chinese speakers" for year, value in zip(years, number_of_chinese_speakers)]
+
+fig = go.Figure(go.Scatter(x=years, y=number_of_chinese_speakers, mode="lines+markers", name="Chinese-speakers in Canada (from 1901 to 2016)", text=labels_with_percentage, hoverinfo="text"))
+fig.add_annotation(text=source_text, xref="paper", yref="paper", x=0.00125, y=1.05, showarrow=False)
+fig.update_layout(title="Number of Chinese-speakers in Canada by Census Year (from 1901 to 2016)", xaxis_title="Year of Census", yaxis_title="Number of Chinese-speakers")
+fig.update_xaxes(tickmode='array', tickvals=years, ticktext=[str(year) for year in years])
+
+fig.show()
