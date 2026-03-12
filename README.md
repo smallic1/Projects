@@ -1,6 +1,6 @@
 ## Projects
 
-### Plotly (2 Projects)
+### Plotly (3 Projects)
 - Means of Transportation to Work by Language Spoken at Home and Ability to Speak English for Workplace Geography (ACS Data) - State of Florida, among Spanish-speakers only for 2024 (Double Bar Graph)
 - Plotly Projects/Number of Chinese-speakers in Canada by Census Year (Line Graph)
 - SAT Scores by gender, 2024 (Bar Graph)
