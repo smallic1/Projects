@@ -2,13 +2,13 @@
 
 ### Plotly (3 Projects)
 - Means of Transportation to Work by Language Spoken at Home and Ability to Speak English for Workplace Geography (ACS Data) - State of Florida, among Spanish-speakers only for 2024 (Double Bar Graph)
-- Number of Chinese-speakers in Canada by Census Year (Line Graph, Plotly version)
+- Number of Chinese-speakers in Canada from 1901 to 2016 (Line Graph, Plotly version) - a comparison project to Matplotlib
 - Average ACT Composite Scores for Race or Ethnicity by Level of Preparation in 2024 (Subplot bar graph)
 
 ### Matplotlib (4 Projects)
 - Matplotlib Projects/Breakdown of 5K Results among Male and Female runners analyzed - Age Group vs. Number of Analyzed Finishes (Double Bar Graph)
 - Correllation between the number of hours studied and the score obtained in the Diplomas de Español como Lengua Extranjera exam (Scatter Plot)
-- Chinese-speakers in Canada from 1901 to 2016 (Line Graph, Matplotlib version)
+- Number of Chinese-speakers in Canada from 1901 to 2016 (Line Graph, Matplotlib version) - a comparison project to Plotly
 - Where did Spanish-speakers in the United States live in 2023? - Data from the World Population Review (Pie Chart)
   
 ## Author
