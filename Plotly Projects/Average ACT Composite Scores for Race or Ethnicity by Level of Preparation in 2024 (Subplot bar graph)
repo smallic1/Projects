@@ -1,0 +1,23 @@
+from plotly.subplots import make_subplots
+import plotly.graph_objects as go
+
+fig = make_subplots(rows=2, cols=1, subplot_titles=("Core or More Coursework", "Less than Core Coursework"))
+
+races = ["Black/African American", "American Indian/Alaska Native", "White", "Hispanic/Latino", "Asian", "Native Hawaiian/Other Pacific Islander", "Two or more races", "Prefer not/no response"]
+core_or_more = [17.8, 18.1, 22.7, 20.0, 25.7, 19.4, 22.0, 23.8]
+less_than_core = [16.2, 16.1, 20.2, 17.7, 23.0, 16.3, 19.5, 20.8]
+labels_core = [f"Core or more - {race}: {value}% of test-takers" for race, value in zip(races, core_or_more)]
+labels_less_than_core = [f"Less than core - {race}: {value}% of test-takers" for race, value in zip(races, less_than_core)]
+
+fig.add_trace(go.Bar(x=races, y=core_or_more, hovertemplate="%{customdata}<extra></extra>",customdata=labels_core, marker=dict(color="steelblue")), row=1, col=1)
+fig.add_trace(go.Bar(x=races, y=less_than_core, hovertemplate="%{customdata}<extra></extra>",customdata=labels_less_than_core, marker=dict(color="green")), row=2, col=1)
+
+source_text = "https://www.act.org/content/dam/act/unsecured/documents/2024-act-national-graduating-class-profile-report.pdf?"
+
+fig.add_annotation(text=source_text, xref="paper", yref="paper", x=0.00125, y=1.057, showarrow=False)
+fig.update_xaxes(title_text="Race/Ethnicity", row=1, col=1)
+fig.update_yaxes(title_text="Percent of test-takers", row=1, col=1)
+fig.update_xaxes(title_text="Race/Ethnicity", row=2, col=1)
+fig.update_yaxes(title_text="Percent of test-takers", row=2, col=1)
+fig.update_layout(title="Average ACT Composite Scores for Race/Ethnicity by Level of Preparation (2024)", xaxis_title="Race/Ethnicity", yaxis_title="Percent of Test-Takers", showlegend=False)
+fig.show()
