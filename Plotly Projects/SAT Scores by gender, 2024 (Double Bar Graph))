@@ -1,0 +1,17 @@
+import plotly.graph_objects as go
+
+categories = ["400-590", "600-790", "800-990", "1000-1190", "1200-1390", "1400-1600"]
+female_test_takers = [1, 16, 33, 29, 16, 6]
+male_test_takers= [1, 18, 28, 26, 17, 9]
+labels_female_test_takers_percentage = [f"{category}: {female_test_takers:,}% of Female test-takers" for category, female_test_takers in zip(categories, female_test_takers)]
+labels_male_test_takers_percentage = [f"{category}: {male_test_takers:,}% of Male test-takers" for category, male_test_takers in zip(categories, male_test_takers)]
+
+trace1 = go.Bar(x=categories, y=female_test_takers, name="Female test-takers", marker_color="blue", customdata=labels_female_test_takers_percentage, hovertemplate="%{customdata}<extra></extra>")
+trace2 = go.Bar(x=categories, y=male_test_takers, name="Male test-takers", marker_color="orange", customdata=labels_male_test_takers_percentage, hovertemplate="%{customdata}<extra></extra>")
+fig = go.Figure(data=[trace1, trace2])
+
+barmode = "group"
+
+fig.update_layout(xaxis_title="SAT Score",yaxis_title="Percentage of test-takers", title="SAT Scores among test-takers by gender, 2024")
+fig.add_annotation(text="Source: https://reports.collegeboard.org/media/pdf/2024-total-group-sat-suite-of-assessments-annual-report-ADA.pdf", xref="paper", yref="paper", x=0.00125, y=1.05, showarrow=False)
+fig.show()
