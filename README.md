@@ -3,7 +3,7 @@
 ### Plotly (3 Projects)
 - Means of Transportation to Work by Language Spoken at Home and Ability to Speak English for Workplace Geography (ACS Data) - State of Florida, among Spanish-speakers only for 2024 (Double Bar Graph)
 - Plotly Projects/Number of Chinese-speakers in Canada by Census Year (Line Graph)
-- SAT Scores by gender, 2024 (Bar Graph)
+- Average ACT Composite Scores for Race or Ethnicity by Level of Preparation in 2024 (Subplot bar graph)
 
 ### Matplotlib (4 Projects)
 - Matplotlib Projects/Breakdown of 5K Results among Male and Female runners analyzed - Age Group vs. Number of Analyzed Finishes (Double Bar Graph)
