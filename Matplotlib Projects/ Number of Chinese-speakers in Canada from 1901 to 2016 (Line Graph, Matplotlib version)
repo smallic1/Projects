@@ -17,3 +17,4 @@ plt.legend(loc='upper left', title='Legend')
 plt.figtext(0.515, 0.02, "Source: https://www150.statcan.gc.ca/n1/pub/11-630-x/11-630-x2018001-eng.htm", ha="center", fontsize=10, color="black")
 plt.show()
 
+
