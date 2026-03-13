@@ -6,7 +6,7 @@
 - Average ACT Composite Scores for Race or Ethnicity by Level of Preparation in 2024 (Subplot bar graph)
 
 ### Matplotlib (4 Projects)
-- Matplotlib Projects/Breakdown of 5K Results among Male and Female runners analyzed - Age Group vs. Number of Analyzed Finishes (Double Bar Graph)
+- Breakdown of 5K Results among Male and Female runners analyzed - Age Group vs. Number of Analyzed Finishes (Double Bar Graph)
 - Correllation between the number of hours studied and the score obtained in the Diplomas de Español como Lengua Extranjera exam (Scatter Plot)
 - Number of Chinese-speakers in Canada from 1901 to 2016 (Line Graph, Matplotlib version) - a comparison project to Plotly
 - Where did Spanish-speakers in the United States live in 2023? - Data from the World Population Review (Pie Chart)
