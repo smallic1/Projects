@@ -1,7 +1,7 @@
 ## Projects
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-### Pandas (2 Projects)
+### Pandas (3 Projects)
 - Sales Data (Cleaned)
 - Patient Records (Histogram, Matplotlib also utilized)
 - Corellation between hours studied and DELE exam score (Scatterplot - Matplotlib and Pandas - A remake)
