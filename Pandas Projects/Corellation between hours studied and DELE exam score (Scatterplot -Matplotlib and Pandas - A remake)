@@ -1,0 +1,24 @@
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+
+df = pd.read_csv(r"C:\Users\Shehr\Downloads\dele_hours_scores.csv", low_memory=False)
+
+plt.title("Correlation between the number of hours studied and the score obtained in the Diplomas de Español como Lengua Extranjera exam", pad=35)
+plt.xlabel("Hours studied")
+plt.ylabel("Score attained")
+
+xpoints = df["Hours Studied"].values
+ypoints = df["Score Obtained in DELE Exam"].values
+question_text = "The table shows information about how many hours the test-takers studies and their scores on the Diplomas de Español como Lengua Extranjera exam. Plot the scatter graph."
+
+z = np.polyfit(xpoints, ypoints, 1)
+p = np.poly1d(z)
+
+plt.scatter(xpoints, ypoints, color='#a52a2a')
+
+xline = np.linspace(xpoints.min(), xpoints.max(), 100)
+plt.plot(xline, p(xline), color='#ed872d', linewidth=2)
+plt.figtext(0.515, 0.8887, question_text, ha="center", fontsize=10, color="black")
+
+plt.show()
