@@ -1,0 +1,21 @@
+import matplotlib.pyplot as plt
+import pandas as pd
+
+df = pd.read_csv(r"C:\Users\Shehr\Downloads\patient_records.csv", low_memory=False)
+
+df["last_visit"] = pd.to_datetime(df["last_visit"], format= "mixed")
+df["dob"] = pd.to_datetime(df["dob"], format= "mixed")
+df.fillna({"height_cm": df["height_cm"].median()}, inplace= True)
+df.fillna({"dob": df["dob"].mean()}, inplace= True)
+mask = (df["weight_kg"] > 0) & (df["weight_kg"] < 100)
+df = df[mask]
+df["dob"] = df["dob"].dt.strftime("%Y-%m-%d")
+df["last_visit"] = df["last_visit"].dt.strftime("%Y-%m-%d")
+df.fillna({"last_visit": "Unknown"}, inplace= True)
+df.drop_duplicates(inplace= True)
+
+print(df.to_string())
+
+df["cholesterol"].plot(kind= "hist", title= "Cholestrol Distribution", color= "steelblue")
+plt.xlabel("height_cm")
+plt.show()
