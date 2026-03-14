@@ -1,5 +1,8 @@
 ## Projects
 
+## Pandas (1 Project)
+- Sales Data (Cleaned)
+  
 ### Plotly (3 Projects)
 - Means of Transportation to Work by Language Spoken at Home and Ability to Speak English for Workplace Geography (ACS Data) - State of Florida, among Spanish-speakers only for 2024 (Double Bar Graph)
 - Number of Chinese-speakers in Canada from 1901 to 2016 (Line Graph, Plotly version) - a comparison project to Matplotlib
