@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
-df = pd.read_csv(r"C:\Users\Shehr\Downloads\dele_hours_scores.csv", low_memory=False)
+df = pd.read_csv(r"dele_hours_scores.csv", low_memory=False)
 
 plt.title("Correlation between the number of hours studied and the score obtained in the Diplomas de Español como Lengua Extranjera exam", pad=35)
 plt.xlabel("Hours studied")
