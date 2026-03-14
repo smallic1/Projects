@@ -12,6 +12,8 @@ df.fillna({"Salesperson": "Unknown"}, inplace= True)
 
 print(df.to_string())
 
-# To run the file, you must download 'sales_data.csv'. To do so, click on it below 'README.md' and then click on the 'Raw' button.
+# To run this project, you must download sales_data.csv. To do so, click on it above, then click the Raw button. 
+# On the Raw page, right-click → Save As → change the file type to All Files → make sure the filename is sales_data.csv → click Save.
+# The file name should end in '.csv'.
 
 
