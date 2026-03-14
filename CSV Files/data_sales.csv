@@ -1,0 +1,16 @@
+OrderID,CustomerName,OrderDate,Amount,Region,Salesperson
+1001,Alice Johnson,2024-01-05,250.00,North,Tom
+1002,Bob Smith,2024/01/08,180.50,South,Sara
+1003,Carol White,2024-01-12,,East,Tom
+1004,David Brown,01-15-2024,4500.00,West,Mike
+1005,Eve Davis,2024-01-18,310.75,North,Sara
+1006,Frank Miller,2024-01-20,99999.00,South,Tom
+1007,,2024-01-22,415.00,East,Mike
+1008,Hannah Lee,2024/01/25,530.00,,Sara
+1009,Ivan Clark,2024-01-28,275.25,West,Tom
+1010,Julia Adams,January 30 2024,88.00,North,Mike
+1011,Kevin Scott,2024-02-01,,South,Sara
+1012,Laura King,2024-02-03,645.00,East,
+1013,Mark Turner,2024-02-06,720.50,West,Tom
+1014,Nancy Hill,2024-02-09,-150.00,North,Mike
+1015,Oscar White,2024-02-11,390.00,South,Sara
