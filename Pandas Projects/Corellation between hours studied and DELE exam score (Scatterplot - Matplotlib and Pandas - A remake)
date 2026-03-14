@@ -22,3 +22,7 @@ plt.plot(xline, p(xline), color='#ed872d', linewidth=2)
 plt.figtext(0.515, 0.8887, question_text, ha="center", fontsize=10, color="black")
 
 plt.show()
+
+# To run this project, you must download sales_data.csv. To do so, click on 'CSV Files', then click on 'dele_hours_scores.csv', and then click on the Raw button. 
+# On the Raw page, right-click → Save As (or press Ctrl + S for Windows or Command + S for MacOS) → change the file type to All Files → make sure the filename is dele_hours_scores.csv → click Save.
+# The file name should end in '.csv'.
