@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import pandas as pd
 
-df = pd.read_csv(r"C:\Users\Shehr\Downloads\patient_records.csv", low_memory=False)
+df = pd.read_csv(r"patient_records.csv", low_memory=False)
 
 df["last_visit"] = pd.to_datetime(df["last_visit"], format= "mixed")
 df["dob"] = pd.to_datetime(df["dob"], format= "mixed")
@@ -19,3 +19,7 @@ print(df.to_string())
 df["cholesterol"].plot(kind= "hist", title= "Cholestrol Distribution", color= "steelblue")
 plt.xlabel("height_cm")
 plt.show()
+
+# To run this project, you must download sales_data.csv. To do so, click on 'CSV Files', then click on 'patient_records.csv', and then click on the Raw button. 
+# On the Raw page, right-click → Save As (or press Ctrl + S for Windows or Command + S for MacOS) → change the file type to All Files → make sure the filename is patient_records.csv → click Save.
+# The file name should end in '.csv'.
