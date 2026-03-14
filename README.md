@@ -4,6 +4,7 @@
 ### Pandas (2 Projects)
 - Sales Data (Cleaned)
 - Patient Records (Histogram, Matplotlib also utilized)
+- Corellation between hours studied and DELE exam score (Scatterplot - Matplotlib and Pandas - A remake)
   
 ### Plotly (3 Projects)
 - Means of Transportation to Work by Language Spoken at Home and Ability to Speak English for Workplace Geography (ACS Data) - State of Florida, among Spanish-speakers only for 2024 (Double Bar Graph)
