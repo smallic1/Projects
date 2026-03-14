@@ -1,0 +1,15 @@
+import pandas as pd
+
+df = pd.read_csv(r"sales_data.csv", low_memory=False)
+
+df["OrderDate"] = pd.to_datetime(df["OrderDate"], format= "mixed")
+df.dropna(subset= ["CustomerName"], inplace= True)
+df.dropna(subset= ["Region"], inplace= True)
+mask = (df["Amount"] > 0) & (df["Amount"] < 5000)
+df = df[mask]
+df.fillna({"Amount": df["Amount"].median()}, inplace= True)
+df.fillna({"Salesperson": "Unknown"}, inplace= True)
+
+print(df.to_string())
+
+# To run the file, you must download the CSV file attached in 'CSV Files'.
