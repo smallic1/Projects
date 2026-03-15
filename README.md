@@ -13,10 +13,11 @@
 A two-panel Plotly subplot displaying 2024 ACT composite score averages across eight racial/ethnic groups, separated by core-or-more versus less-than-core coursework preparation, with hover labels detailing each group's percentage of test-takers.
 
 ### Matplotlib (4 Projects)
-- Breakdown of 5K Results among Male and Female runners analyzed - Age Group vs. Number of Analyzed Finishes (Double Bar Graph)
-- Correlation between the number of hours studied and the score obtained in the Diplomas de Español como Lengua Extranjera exam (Scatter Plot)
-- Number of Chinese-speakers in Canada from 1901 to 2016 (Line Graph, Matplotlib version) - a comparison project to Plotly
-- Where did Spanish-speakers in the United States live in 2023? - Data from the World Population Review (Pie Chart)
+- Breakdown of 5K Results among Male and Female runners analyzed - Age Group vs. Number of Analyzed Finishes (Double Bar Graph): A Matplotlib double bar graph using NumPy arrays to plot analyzed 5K finishes across nine age groups, with side-by-side bars distinguishing female (steelblue) and male (crimson) runners across over 1.8 million total recorded finishes.
+- Correlation between the number of hours studied and the score obtained in the Diplomas de Español como Lengua Extranjera exam (Scatter Plot): A Matplotlib scatterplot of 25 data points mapping study hours against DELE exam scores, with a NumPy first-degree polynomial trendline fitted via np.polyfit to illustrate the positive correlation between preparation and performance.
+- Number of Chinese-speakers in Canada from 1901 to 2016 (Line Graph, Matplotlib version) - a comparison project to Plotly: 
+A Matplotlib line graph plotting 16 Canadian census data points from 1901 to 2016 using NumPy arrays, tracking the growth of Chinese-speaking populations from 16,470 to over 1.3 million with custom x-tick labels and a Statistics Canada source citation.
+- Where did Spanish-speakers in the United States live in 2023? - Data from the World Population Review (Pie Chart): A Matplotlib pie chart visualizing the geographic distribution of U.S. Spanish-speakers across seven states plus an aggregated "Other" category, using 2023 World Population Review data with custom hex color coding and a rounding disclaimer footnote.
   
 ## Author
 Shay Mallick - (https://github.com/smallic1)
