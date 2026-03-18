@@ -11,6 +11,7 @@
 - Number of Chinese-speakers in Canada from 1901 to 2016 (Line Graph, Plotly version) - a comparison project to Matplotlib: An interactive Plotly line graph with markers tracking Chinese-speaking population counts across 16 Canadian census years, using custom hover text to display formatted population values and a source annotation linking to Statistics Canada.
 - Average ACT Composite Scores for Race or Ethnicity by Level of Preparation in 2024 (Subplot bar graph): 
 A two-panel Plotly subplot displaying 2024 ACT composite score averages across eight racial/ethnic groups, separated by core-or-more versus less-than-core coursework preparation, with hover labels detailing each group's percentage of test-takers.
+-  Evolution of the population by mother tongue, as a percentage of the total population in Canada, 1901 to 2016 (Stacked Bar Graph, Plotly Version) - a comparison project to Matplotlib: An interactive Plotly stacked bar graph with markers visualizing the evolution of Canada's population by mother tongue — Anglophone, Francophone, and Allophone — as a percentage of the total population across census years from 1901 to 2016.
 
 ### Matplotlib (5 Projects)
 - Breakdown of 5K Results among Male and Female runners analyzed - Age Group vs. Number of Analyzed Finishes (Double Bar Graph): A Matplotlib double bar graph visualizing analyzed 5K finishes across nine age groups, with side-by-side bars distinguishing female (steelblue) and male (crimson) runners across over 1.8 million total recorded finishes.
