@@ -1,0 +1,23 @@
+import plotly.graph_objects as go
+
+census_year = [1901, 1911, 1921, 1931, 1941, 1951, 1961, 1971, 1981, 1986, 1991, 1996, 2001, 2006, 2011, 2016]
+anglophone = [61.0, 62.3, 60.0, 57.5, 56.5, 59.1, 58.5, 60.2, 61.2, 62.2, 60.4, 59.8, 59.1, 57.8, 57.8, 57.2]
+francophone = [30.5, 27.7, 27.0, 27.6, 29.2, 29.0, 28.1, 26.8, 25.6, 25.1, 24.3, 23.5, 22.9, 22.1, 21.7, 20.9]
+allophone = [8.4, 10.1, 13.1, 14.9, 14.3, 11.8, 13.5, 13.0, 13.1, 12.7, 15.3, 16.6, 18.0, 20.1, 20.6, 21.9]
+
+labels_anglophone = [f"{category}: {value:,}% of Canadian population" for category, value in zip(census_year, anglophone)]
+labels_francophone = [f"{category}: {value:,}% of Canadian population" for category, value in zip(census_year, francophone)]
+labels_allophone = [f"{category}: {value:,}% of Canadian population" for category, value in zip(census_year, allophone)]
+
+trace1 = go.Bar(x=census_year, y=anglophone, marker_color= "#ff033e", customdata=labels_anglophone, name= "Anglophone", hovertemplate="%{customdata}<extra></extra>")
+trace2 = go.Bar(x=census_year, y=francophone, marker_color= "#cd9575", customdata=labels_francophone, name= "Francophone", hovertemplate="%{customdata}<extra></extra>")
+trace3 = go.Bar(x=census_year, y=allophone, marker_color= "#9966cc", customdata=labels_allophone, name= "Allophone", hovertemplate="%{customdata}<extra></extra>")
+fig = go.Figure(data= [trace1, trace2, trace3])
+
+barmode = "stack"
+
+fig.update_layout(barmode="stack", xaxis_title="Year of Census", yaxis_title="Percentage of the total population", title="Evolution of the population by mother tongue, as a percentage of the total population in Canada, 1901 to 2016")
+fig.add_annotation(text="Source: https://www150.statcan.gc.ca/n1/pub/11-630-x/11-630-x2018001-eng.htm", xref="paper", yref="paper", x=0.00125, y=1.05, showarrow=False)
+fig.update_xaxes(tickmode='array', tickvals=census_year, ticktext=[str(year) for year in census_year])
+
+fig.show()
