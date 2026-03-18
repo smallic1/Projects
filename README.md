@@ -18,7 +18,7 @@ A two-panel Plotly subplot displaying 2024 ACT composite score averages across e
 - Number of Chinese-speakers in Canada from 1901 to 2016 (Line Graph, Matplotlib version) - a comparison project to Plotly: 
 A Matplotlib line graph plotting 16 Canadian census data points from 1901 to 2016, tracking the growth of Chinese-speaking populations from 16,470 to over 1.3 million with custom x-tick labels and a Statistics Canada source citation.
 - Where did Spanish-speakers in the United States live in 2023? - Data from the World Population Review (Pie Chart): A Matplotlib pie chart visualizing the geographic distribution of U.S. Spanish-speakers across seven states plus an aggregated "Other" category, using 2023 World Population Review data with custom hex color coding and a rounding disclaimer footnote.
-- Evolution of the population by mother tongue, as a percentage of the total population in Canada, 1901 to 2016 (Stacked Bar Graph): A Matplotlib stacked bar chart visualizing the evolution of Canada's population by mother tongue — Anglophone, Francophone, and Allophone — as a percentage of the total population across census years from 1901 to 2016. A Statistics Canada source citation was also used as well.
+- Evolution of the population by mother tongue, as a percentage of the total population in Canada, 1901 to 2016 (Stacked Bar Graph, Matplotlib Version) - a comparison project to Plotly: A Matplotlib stacked bar chart visualizing the evolution of Canada's population by mother tongue — Anglophone, Francophone, and Allophone — as a percentage of the total population across census years from 1901 to 2016. A Statistics Canada source citation was also used as well.
   
 ## Author
 Shay Mallick - (https://github.com/smallic1)
