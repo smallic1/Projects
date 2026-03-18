@@ -10,11 +10,19 @@ anglophone = np.array([61.0, 62.3, 60.0, 57.5, 56.5, 59.1, 58.5, 60.2, 61.2, 62.
 francophone = np.array([30.5, 27.7, 27.0, 27.6, 29.2, 29.0, 28.1, 26.8, 25.6, 25.1, 24.3, 23.5, 22.9, 22.1, 21.7, 20.9])
 allophone = np.array([8.4, 10.1, 13.1, 14.9, 14.3, 11.8, 13.5, 13.0, 13.1, 12.7, 15.3, 16.6, 18.0, 20.1, 20.6, 21.9])
 
-width = 3.25
+width = 3.35
 
-plt.bar(census_year, anglophone, width= width, color= "#318ce7", label= "Anglophone")
-plt.bar(census_year, francophone, width= width, bottom= anglophone, color= "#cc5500", label= "Francophone")
-plt.bar(census_year, allophone, width= width, bottom= anglophone + francophone, color= "#702963", label= "Allophone")
+plt.bar(census_year, anglophone, width= width, color= "#008000", label= "Anglophone")
+plt.bar(census_year, francophone, width= width, bottom= anglophone, color= "#702963", label= "Francophone")
+plt.bar(census_year, allophone, width= width, bottom= anglophone + francophone, color= "#cc5500", label= "Allophone")
+
+def add_labels(years, values, bottoms):
+    for i in range(len(years)):
+        plt.text(years[i], bottoms[i] + values[i] / 2, f"{values[i]}%", ha= "center", va= "center", fontsize=6, color="white")
+
+add_labels(census_year, anglophone, np.zeros(len(census_year)))
+add_labels(census_year, francophone, anglophone)
+add_labels(census_year, allophone, anglophone + francophone)
 
 plt.xticks([1901, 1911, 1921, 1931, 1941, 1951, 1961, 1971, 1981, 1986, 1991, 1996, 2001, 2006, 2011, 2016])
 
