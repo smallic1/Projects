@@ -7,6 +7,7 @@
 - Correlation between hours studied and DELE exam score (Scatterplot - Matplotlib and Pandas - A remake): Loads a CSV of study hours and DELE exam scores into a Pandas DataFrame, plotting the data points as a scatterplot and overlaying a linear regression trend line using NumPy's polynomial fitting functions via Matplotlib. A comparative project to the Matplotlib version.
 - Employee Salary Analysis (Horizontal Bar Graph, Matplotlib also used): Loads 2 CSV employee datasets and then combines them using Pandas, sorts employees by salary, and visualizes the results in a horizontal bar chart using Matplotlib.
   
+  
 ### Plotly (4 Projects)
 - Means of Transportation to Work by Language Spoken at Home and Ability to Speak English for Workplace Geography (ACS Data) - State of Florida, among Spanish-speakers only for 2024 (Double Bar Graph): A grouped Plotly bar graph built using 2024 ACS Census data, comparing six commute methods between Florida Spanish-speakers who speak English very well versus less than very well, with custom hover labels displaying exact respondent counts per category.
 - Number of Chinese-speakers in Canada from 1901 to 2016 (Line Graph, Plotly version) - a comparison project to Matplotlib: An interactive Plotly line graph with markers tracking Chinese-speaking population counts across 16 Canadian census years, using custom hover text to display formatted population values and a source annotation linking to Statistics Canada.
