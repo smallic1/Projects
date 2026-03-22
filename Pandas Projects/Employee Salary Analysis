@@ -1,0 +1,17 @@
+import matplotlib.pyplot as plt
+import pandas as pd
+
+employees_q1 = pd.read_csv(r"employees_q1.csv", low_memory=False)
+employees_q2 = pd.read_csv(r"employees_q2.csv", low_memory=False)
+
+frames = [employees_q1, employees_q2]
+
+df = pd.concat([employees_q1, employees_q2], ignore_index= True)
+df.sort_values(by="salary", ascending= False, inplace= True)
+print(df.to_string())
+
+df["salary"].plot(kind= "barh", title= "Salary of employees", color= "red")
+plt.xlabel("salary")
+plt.ylabel("Employee")
+plt.yticks(ticks=range(len(df)), labels=df["name"])
+plt.show()
