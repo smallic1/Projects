@@ -15,3 +15,8 @@ plt.xlabel("salary")
 plt.ylabel("Employee")
 plt.yticks(ticks=range(len(df)), labels=df["name"])
 plt.show()
+
+# To run this project, you must download employees_q1.csv and employees_q2.csv. To do so, click on 'CSV Files', then click on 'patient_records.csv', and then click on the Raw button. 
+# On the Raw page, right-click → Save As (or press Ctrl + S for Windows or Command + S for MacOS) → change the file type to All Files → make sure the filenames are 
+employees_q1.csv and employees_q2.csv respectively → click Save
+# The file names should end in '.csv'.
