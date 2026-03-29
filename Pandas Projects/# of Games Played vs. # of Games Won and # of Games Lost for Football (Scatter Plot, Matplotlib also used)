@@ -1,0 +1,46 @@
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+
+df = pd.read_csv(r"C:\Users\Shehr\Downloads\AllTimeRankingByClub.csv", low_memory=False, encoding= "utf-16")
+
+print(df.to_string())
+
+plt.figure(figsize=(14,6))
+
+plt.suptitle("# of Games Played vs. # of Games Won and # of Games Lost (Football)")
+
+plt.subplot(1, 2, 1)
+plt.ylim(0,300)
+
+plt.title("# of Games Played vs. # of Games Won")
+plt.xlabel("# of Games Played")
+plt.ylabel("# of Games Won")
+xvalues = df["Played"].values
+yvalues = df["Win"].values
+
+z = np.polyfit(xvalues, yvalues, 1)
+p = np.poly1d(z)
+
+xline = np.linspace(xvalues.min(), xvalues.max(), 100)
+plt.plot(xline, p(xline), color="#008000", linewidth=2)
+plt.scatter(xvalues, yvalues, color= "steelblue")
+
+plt.subplot(1, 2, 2)
+plt.ylim(0,300)
+
+plt.title("# of Games Played vs. # of Games Lost")
+plt.xlabel("# of Games Played")
+plt.ylabel("# of Games Lost")
+xvalues = df["Played"].values
+yvalues = df["Loss"].values
+
+z = np.polyfit(xvalues, yvalues, 1)
+p = np.poly1d(z)
+
+xline = np.linspace(xvalues.min(), xvalues.max(), 100)
+plt.plot(xline, p(xline), color= "#008000", linewidth=2)
+plt.scatter(xvalues, yvalues, color= "red")
+
+plt.tight_layout(rect=[0, 0, 1, 1])
+plt.show()
