@@ -2,7 +2,7 @@
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ### Pandas (5 Projects)
-- Sales Data (Cleaned): Loads a CSV sales dataset using Pandas, dropping rows missing values, applying boolean masking, filling remaining null columns with placeholders and median values, and prints the entire cleaned DataFrame.
+- Sales Data (Cleaned): Loads a CSV sales dataset using Pandas, dropping rows missing values, applying boolean masking, filling remaining null columns with placeholders and median values, and prints the entire cleaned DataFrame for the purpose of the demonstration of core data cleaning techniques in Pandas using a simple dataset.
 - Patient Records (Histogram, Matplotlib also utilized): Loads a CSV patient records dataset using Pandas, dropping duplicates, imputing missing values with median and mean estimates, filtering invalid weight entries, and rendering a cholesterol distribution histogram via Matplotlib.
 - Correlation between hours studied and DELE exam score (Scatterplot - Matplotlib and Pandas - A remake): Loads a CSV of study hours and DELE exam scores into a Pandas DataFrame, plotting the data points as a scatterplot and overlaying a linear regression trend line using NumPy's polynomial fitting functions via Matplotlib. A comparative project to the Matplotlib version.
 - Employee Salary Analysis (Horizontal Bar Graph, Matplotlib also used): Loads 2 CSV employee datasets and then combines them using Pandas, sorts employees by salary, and visualizes the results in a horizontal bar chart using Matplotlib.
