@@ -44,3 +44,8 @@ plt.scatter(xvalues, yvalues, color= "red")
 
 plt.tight_layout(rect=[0, 0, 1, 1])
 plt.show()
+
+# To run this project, you must download AllTimeRankingByClub.csv. To do so, click on 'CSV Files', then click on 'AllTimeRankingByClub.csv', and then click on the Raw button. 
+# On the Raw page, right-click → Save As (or press Ctrl + S for Windows or Command + S for MacOS) → change the file type to All Files → make sure the filename is 
+AllTimeRankingByClub.csv → click Save
+# The file names should end in '.csv'.
