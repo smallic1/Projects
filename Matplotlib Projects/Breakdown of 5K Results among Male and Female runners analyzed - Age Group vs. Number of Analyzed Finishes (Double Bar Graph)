@@ -12,8 +12,8 @@ y2points = np.array([80534, 41008, 49943, 143017, 202578, 169039, 120255, 66201,
 x = np.arange(len(xpoints)) 
 width = 0.35 
 
-plt.bar(x - width/2, y1points, width, color="steelblue", label="Female test-takers")
-plt.bar(x + width/2, y2points, width, color="crimson", label="Male test-takers")
+plt.bar(x - width/2, y1points, width, color="steelblue", label="Female runners")
+plt.bar(x + width/2, y2points, width, color="crimson", label="Male runners")
 
 plt.xticks(x, xpoints)
 
